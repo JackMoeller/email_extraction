@@ -1,5 +1,5 @@
 #Utility for finsing emails in raw text
-#to run use python 2 and pass filename  as command line argument
+#to run pass filename where input is found as command line argument
 
 import sys
 #from optparse import OptionParser
@@ -23,7 +23,7 @@ def get_emails(s):
 
 
 
-chars = []
+
 in_file = open(sys.argv[1], 'r')
 emails = get_emails(in_file.read().lower())
 in_file.close()
